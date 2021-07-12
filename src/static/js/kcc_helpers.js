@@ -484,7 +484,7 @@ async function loadSteakChefContract(App, tokens, prices, chef, chefAddress, che
 async function loadMultipleKccSynthetixPools(App, tokens, prices, pools) {
   let totalStaked  = 0, totalUserStaked = 0, individualAPRs = [];
   const infos = await Promise.all(pools.map(p =>
-      loadkccSynthetixPoolInfo(App, tokens, prices, p.abi, p.address, p.rewardTokenFunction, p.stakeTokenFunction)));
+    loadKccSynthetixPoolInfo(App, tokens, prices, p.abi, p.address, p.rewardTokenFunction, p.stakeTokenFunction)));
   for (const i of infos) {
     let p = await printSynthetixPool(App, i, "kcc");
     totalStaked += p.staked_tvl || 0;
