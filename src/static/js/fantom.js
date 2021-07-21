@@ -229,7 +229,13 @@ const main = async() => {
         `<a href='behodl'>Various</a>`,
         "beHODL",
         "N/A"
-      ]
+      ],
+      [
+        "AURA",
+        `<a href='aura'>Various</a>`,
+        "AURA",
+        "https://dapp.aurafi.org/"
+      ],
     ]
   }
 
